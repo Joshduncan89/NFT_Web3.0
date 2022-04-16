@@ -157,7 +157,7 @@ const NFTDropPage = ({ collection }: Props) => {
               </p>
             ) : (
               <p className='text-sm text-red-600'>
-                {claimedSupply}/{totalSupply?.toString()} NFT's claimed
+                {claimedSupply}/{totalSupply?.toString()} NFTs claimed
               </p>
             )}
           </div>

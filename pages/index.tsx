@@ -92,7 +92,7 @@ const Home = ({ collections }: Props) => {
         </div>
         <h1 className='text-xl md:text-4xl text-red-200 font-semibold mb-8'>
           {" "}
-          <span className='font-bold text-blue-400'>Discover</span> new NFT's
+          <span className='font-bold text-blue-400'>Discover</span> new NFTs
         </h1>
         <main className='bg-slate-100/60 px-10 pt-10 pb-5 shadow-xl shadow-blue-500/60 rounded-sm'>
           <div className='grid space-x-3  md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4'>

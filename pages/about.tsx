@@ -17,10 +17,10 @@ const about = () => {
         </h1>
         <h1 className='text-xl md:text-4xl text-red-200 font-semibold mb-8'>
           {" "}
-          <span className='font-bold text-blue-400'>Discover</span> new NFT's
+          <span className='font-bold text-blue-400'>Discover</span> new NFTs
         </h1>
 
-        <p className='mb-16'>A marketplace for affordable and stylish NFT's</p>
+        <p className='mb-16'>A marketplace for affordable and stylish NFTs</p>
       </div>
       <div className='w-full rounded-t-md bg-slate-400 font-semibold text-black'>
         <div className='flex flex-col  bg-slate-400 pt-3 '>
