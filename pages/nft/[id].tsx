@@ -22,7 +22,7 @@ interface Props {
 
 const NFTDropPage = ({ collection }: Props) => {
   const [isOpen, setIsOpen] = useRecoilState<boolean>(setModalOpen);
-  const [newNFT, setNewNFT] = useRecoilState<string | undefined>(newNftImage);
+  const [newNFT, setNewNFT] = useRecoilState<string>(newNftImage);
   const [claimedSupply, setClaimedSupply] = useState<number>(0);
   const [totalSupply, setTotalSupply] = useState<BigNumber>();
   const [ethPrice, setEthPrice] = useState<string>();
@@ -71,7 +71,7 @@ const NFTDropPage = ({ collection }: Props) => {
         const receipt = tx[0].receipt;
         const claimId = tx[0].id;
         const claimedNFT = await tx[0].data();
-        setNewNFT(claimedNFT.metadata.image);
+        setNewNFT(claimedNFT.metadata.image as string);
         toast("SUCCESS!!", {
           duration: 8000,
         });

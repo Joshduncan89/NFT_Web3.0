@@ -5,7 +5,7 @@ export const setModalOpen = atom({
   default: false,
 });
 
-export const newNftImage: RecoilState<string | undefined> = atom({
+export const newNftImage: RecoilState<string> = atom({
   key: "newNftImage",
-  default: undefined,
+  default: "",
 });
